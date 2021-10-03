@@ -1,4 +1,4 @@
-<base href="http://localhost/MegaWeb/dienthoai/" />
+<base href="http://localhost/dienthoai/" />
 <?php 
 session_start();
 include("include/connect.php");?>
@@ -10,7 +10,7 @@ include("include/connect.php");?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mega Web </title>
 <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/index1.css">
+<link rel="stylesheet" href="css/mainpage.css">
 
 
 
@@ -182,7 +182,7 @@ e.preventDefault();
 
 	
 	<div id="content">
-		<div id="lofslidecontent45" class="lof-slidecontent" style="width:98%; height:350px;">
+		<div id="lofslidecontent45" class="lof-slidecontent" style="width:100%; height:350px;">
 			<div class="preload"><div></div></div>
 				<div id="lof-main-outer">
 					<ul class="lof-main-wapper">

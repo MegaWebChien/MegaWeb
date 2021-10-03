@@ -1,18 +1,5 @@
 
-<?php //session_start();
-//require("chksession.php");
-//*****************************************************************************
-//[Modul name]: function.php
-//[Purpose]   : Quan ly all function co lien quan toi PHP
-//[Date]      : 31.10.05
-//[Creator]   : PhongCT+HieuNK+DuongNT
-//[Detail]    : Nhung ham khac nam trong trang FunctionJS.js
-//******************************************************************************
-//==============================================================================================
-//********************************************************
-//[Creator]   : PhongCT
-//********************************************************
-
+<?php 
 function chuanhoaxau($str)
 {
  $len=strlen($str);
@@ -28,10 +15,8 @@ function chuanhoaxau($str)
 	return $str;
 	}
 }  
-//********************************************************
-//[Creator]   : PhongCT
-//********************************************************
-function ngaythangnam($namthangngay) // Date : USA -> France  [(0000-00-00) -> (00-00-0000)]
+
+function ngaythangnam($namthangngay) 
 {
 	if($namthangngay!="")
 	{
@@ -43,19 +28,14 @@ function ngaythangnam($namthangngay) // Date : USA -> France  [(0000-00-00) -> (
 	return $ntn;
 	
 }
-//********************************************************
-//[Creator]   : PhongCT
-//********************************************************
-function nam_tn($namthangngay)//year of USA(0000-00-00)
+
+function nam_tn($namthangngay)
 {
 	if($namthangngay!="")
 	{	$nam=substr($namthangngay,0,4); }
 	return $nam;
 }
-//********************************************************
-//[Creator]   : PhongCT
-//********************************************************
-function namthangngay($ngaythangnam)//Date : France -> USA  [(00-00-0000)->(0000-00-00)]
+function namthangngay($ngaythangnam)
 {
 	if($ngaythangnam!="")
 	{
@@ -67,9 +47,6 @@ function namthangngay($ngaythangnam)//Date : France -> USA  [(00-00-0000)->(0000
 	return $ntn;
 	
 }
-//********************************************************
-//[Creator]   : PhongCT
-//********************************************************
 function taomadm($bang,$truongma,$kytudungdau='')
 {
 	require("dbcon.inc");
@@ -113,12 +90,9 @@ function taomadm($bang,$truongma,$kytudungdau='')
 				else
 					$sau=$kytudungdau.'00001';
 			 return ($sau);
-		 mysqli_close();
+		 mysqli_close($mysqli);
 }
 
-//********************************************************
-//[Creator]   : PhongCT
-//********************************************************
 function identity_int($bang,$truongma)
 {
 	require("dbcon.inc");
@@ -136,7 +110,7 @@ function identity_int($bang,$truongma)
 		  $tam1=$Ma[$stt-1];
 		  	if($tam1>$tam) $tam=$tam1;		
 	}
-	mysqli_close();
+	mysqli_close($mysqli);
 		 $tam++;
 			 return ($tam);
 		 
@@ -162,11 +136,8 @@ function taoma($bang,$truongma)
 	}
 			$i=$tam+1;
 			 return ($i);
-		 mysqli_close();
+		 mysqli_close($mysqli);
 }
-//********************************************************
-//[Creator]   : AnhPT
-//********************************************************
 function redirect($url, $message="", $delay=0) { 
 /* redirects to a new URL using meta tags */ 
 echo "<meta http-equiv='refresh' content='$delay;URL=$url'>"; 
@@ -177,9 +148,6 @@ exit;
 
 ?>
 <?php
-//********************************************************
-//[Creator]   : AnhPT
-//********************************************************
 function Doitienrachu($str_nu)
 {
 		$chuoi_="";
@@ -335,14 +303,6 @@ function Doitienrachu($str_nu)
 	
 } 
 //********************************************************
-//[Creator]   : PhongCT
-//[Detail]	  : Khi ban co duoc ma cua mot ban ghi nao do, ban can phai lay ten cua no ra de hien thi dung khong ?
-//				Function nay rat co ich day
-// $ten=layten("Ten bang","Ten Truong Can Lay Ra De Hien Thi","Gia Tri Ma De so sanh ","truong ma de so sanh");
-//Ngoai ra : 2 tham so phia sau co the co hay khong co cung duoc.
-//No de truyen vao gia tri va dieu kien so sanh thu 2.
-// $ten=layten(..,);
-//********************************************************
 function layten($table,$field_ten,$value_ma,$field_ma,$value_ma2="",$field_dieukien2="")
 {
 require("dbcon.inc");
@@ -355,13 +315,13 @@ $sql___="SELECT $field_ten FROM $table WHERE $field_ma='$value_ma' $where___";
 $result______=mysqli_query($mysqli,$sql___,$link);
 if(mysqli_num_rows($result______)!=0)
 	{
-		while($row______=mysql_fetch_object($result______))	
+		while($row______=mysqli_fetch_object($result______))	
 		{	$ten=$row______->$field_ten; }
 		
 	}
 	return $ten;
 }
-//********************************************************
+
 ?>
 
 

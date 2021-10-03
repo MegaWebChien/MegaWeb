@@ -12,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script language="javascript" src="ckeditor/ckeditor.js"></script>
 <title> Bán Điện Thoại </title>
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/admin.css">
 
 
 
@@ -35,7 +35,7 @@
 	</div><!-- End .header -->
 	<div id="content">
 		<div id="top-content">
-						<p>Chào bạn <font color="black"><b><u><?= $_SESSION['username']?></u></b></font><a href="logout.php"> | Thoát</a></p>
+						<p>Chào bạn <font color="green"><b><u><?= $_SESSION['username']?></u></b></font><a href="logout.php"> | Thoát</a></p>
 		</div>
 		<div id="main-content">
 			<div id="left-content">

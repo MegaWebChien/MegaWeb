@@ -46,7 +46,7 @@
 		}  
 
 		// Chọn số kết quả trả về trong mỗi trang mặc định là 10 
-		$max_results = 10;  
+		$max_results = 4;  
 
 		// Tính số thứ tự giá trị trả về của đầu trang hiện tại 
 		$from = (($page * $max_results) - $max_results);  
