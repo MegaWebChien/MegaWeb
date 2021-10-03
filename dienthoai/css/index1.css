@@ -2,7 +2,7 @@
 body {font-family: Tahoma, Arial, Helvetica, sans-serif;}
 a {text-decoration:none;}
 ul li {list-style:none;}
-#wapper {width:90%; height:auto; padding: 5px; margin:auto; background:white; border:1px solid #e6e6e6; -webkit-box-shadow: 0 1px 20px #767676; box-shadow:0 1px 20px #767676;-moz-box-shadow: 0 1px 20px #767676;}
+#wapper {width:1000px; height:auto; padding: 5px; margin:auto; background:white; border:1px solid #e6e6e6; -webkit-box-shadow: 0 1px 20px #767676; box-shadow:0 1px 20px #767676;-moz-box-shadow: 0 1px 20px #767676;}
 #header {width:100%; height:200px;}
 	
 	#bg-header {background-image:url(../img/hoanggui5.png) ; width:auto; height:150px; margin:0 auto; border-bottom:1px solid #151515;}
@@ -59,7 +59,7 @@ ul li {list-style:none;}
                             .button ul li a button:hover {color:white; border:1px solid #f1f1f1; background: green;}
                             .button ul li h1 a button{background:white; border:1px solid #aea8a8;}
                             .button ul li h5 a button{background:white; border:1px solid #aea8a8; }
-#right-content {width:340px; height:auto; float:right; margin-top:-22px; margin-right: 3px;}
+#right-content {width:500px; height:auto; float:right; margin-top:-22px; margin-right: 3px;}
     #dangnhap {width:300px;  height:auto; }
     .center1 {width:230px; height: auto; border:1px solid #b4b4b4; margin:auto; border-radius:3px;}
         #dangnhap h4 {background:url(../img/tieudedangnhap.jpg) no-repeat; width:288px; height:50px; padding-top:10px;text-align:center;}
