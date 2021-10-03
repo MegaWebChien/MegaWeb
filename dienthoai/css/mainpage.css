@@ -72,10 +72,8 @@ ul li {list-style:none;}
             #dangnhap-in span#logout p{text-align:right; color:blue; padding-right:10px;padding-bottom:20px;}
                 #dangnhap-in span#logout p a {font-weight:normal;}
                 #dangnhap-in span#logout p a:hover{text-decoration:underline;}
-            #dangnhap-in span p {}
             #dangnhap-in a button {background:white; margin-left:50px; border:1px solid #e1e1e1; color:black; width:80px; height:25px; cursor:pointer;border:1px solid #e6e6e6; -webkit-box-shadow: 0 1px 5px #848484; box-shadow:0 1px 5px #848484;-moz-box-shadow: 0 1px 5px #848484;}
                 #dangnhap-in a button:hover {background:blue; border:1px solid #e1e1e1; color:white; }
-                #dangnhap-in a button {}
             #dangnhap-in ul {width:100%; height:25px; font-size:12px; padding-top:10px;}
                 #dangnhap-in ul li{width:49%; float:left;}
                     #dangnhap-in ul li a{color:blue;}
