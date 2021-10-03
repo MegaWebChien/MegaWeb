@@ -10,7 +10,7 @@ include("include/connect.php");?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mega Web </title>
 <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/mainpage.css">
+<link rel="stylesheet" href="css/index1.css">
 
 
 

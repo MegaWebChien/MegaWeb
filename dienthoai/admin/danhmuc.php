@@ -6,11 +6,9 @@
 <link rel="stylesheet" href="css/hienthi_sp.css" />
 </head>
 <?php
-		include ('../include/connect.php');
-			
-		$select = "select * from danhmuc";
-		$query = mysqli_query($mysqli,$select);
-		$dem = mysqli_num_rows($query);
+	include '../include/connect.php';
+	$hienthi = mysqli_query($mysqli,"SELECT * FROM danhmuc");
+			 $dem = mysqli_num_rows($hienthi);
 ?>
 <div class="quanlysp">
 	<h3>QUẢN LÝ DANH MỤC</h3>
@@ -27,86 +25,65 @@
             <td colspan=2>Active</td>
         </tr>
                
-		<?php
-	
-	/*------------Phan trang------------- */
-		// Nếu đã có sẵn số thứ tự của trang thì giữ nguyên (ở đây tôi dùng biến $page) 
-		// nếu chưa có, đặt mặc định là 1!   
-
-		if(!isset($_GET['page'])){  
-		$page = 1;  
-		} else {  
-		$page = $_GET['page'];  
-		}  
-
-		// Chọn số kết quả trả về trong mỗi trang mặc định là 10 
-		$max_results = 4;  
-
-		// Tính số thứ tự giá trị trả về của đầu trang hiện tại 
-		$from = (($page * $max_results) - $max_results);  
-
-		// Chạy 1 MySQL query để hiện thị kết quả trên trang hiện tại  
-
-		$sql = mysqli_query($mysqli,"SELECT * FROM danhmuc ORDER by madm DESC  LIMIT $from, $max_results"); 
-
-
-
-								
-    if($dem > 0)
-        while ($bien = mysqli_fetch_array($sql))
-        {
-?>      
-<tr class='noidung_hienthi_sp'>
-				<!-- <td class="masp_hienthi_sp"><input type="checkbox" name="id[]" class="item" class="checkbox" value="<?=$bien['idsp']?>"/></td> -->
-                <td class="masp_hienthi_sp"><?php  echo $bien['madm'] ?></td>
-				<td class="sl_hienthi_sp"><?php echo $bien['tendm'] ?></td>
-				<td class="sl_hienthi_sp"><?php echo $bien['dequi'] ?></td>
-                <td class="active_hienthi_sp">
-                    <a href='admin.php?admin=suasp&idsp=<?php echo $bien['madm']  ?>'><img src="img/sua.png" title="Sửa"></a>
-				</td>
-            </tr>
-<?php 
-    }
-	
-    else echo "<tr><td colspan='6'>Không có sản phẩm trong CSDL</td></tr>";
-	
-?>
-</table>
-</form>
-	<div id="phantrang_sp">
-	
-	<?php
-			// Tính tổng kết quả trong toàn DB:  
-			//$total_results = mysql_result(mysqli_query($mysqli,"SELECT COUNT(*) as Num FROM sanpham"),0);  
-			$result = mysqli_query($mysqli,"SELECT COUNT(*) as total FROM danhmuc");
-			$row = mysqli_fetch_assoc($result);
-			$total_results = $row['total'];
-			// Tính tổng số trang. Làm tròn lên sử dụng ceil()  
-			$total_pages = ceil($total_results / $max_results);  
-
-
-			// Tạo liên kết đến trang trước trang đang xem 
-			if($page > 1){  
-			$prev = ($page - 1);  
-			echo "<a href=\"".$_SERVER['PHP_SELF']."?admin=hienthidm&page=$prev\"><button class='trang'>Trang trước</button></a>&nbsp;";  
-			}  
-
-			for($i = 1; $i <= $total_pages; $i++){  
-			if(($page) == $i){  
-				if($i>1) {
-						echo "$i&nbsp;";  } 
+        <?php
+			
+			if($dem !="")
+			{
+				while($bien=mysqli_fetch_array($hienthi))
+				{
 				
-			} else {  
-			echo "<a href=\"".$_SERVER['PHP_SELF']."?admin=hienthidm&page=$i\"><button class='so'>$i</button></a>&nbsp;";  
-			}  
-			}  
-
-			// Tạo liên kết đến trang tiếp theo  
-			if($page < $total_pages){  
-			$next = ($page + 1);  
-			echo "<a href=\"".$_SERVER['PHP_SELF']."?admin=hienthidm&page=$next\"><button class='trang'>Trang sau</button></a>";  
-			}  
-			echo "</center>";  		
-		
-	?>
-	</div>
+		?>
+                   <tr>
+                   <td class="masp_hienthi_sp">
+                    <?php echo $bien['madm'] ?>
+                   </td>
+                   <td class="tensp_hienthi_sp">
+                    <b><?php echo $bien['tendm'] ?></b>
+                    </td>
+                    <td class="masp_hienthi_sp">
+					
+                    <?php
+						if($bien['dequi'] ==0) {
+							echo "Danh mục chính";
+						}
+						else {
+							if($bien['dequi']==1) {
+								echo "Điện thoại";
+							}
+							else {
+								echo "Phụ kiện";
+							}
+							
+						}
+						
+					?>
+                    </td>
+					
+                    <td class="active_hienthi_sp"><a href="?admin=suadm&madm=<?php echo $bien['madm']?>" > <img src="img/sua.png" title="Sửa" /></a>
+					<?php echo "<p onclick = 'checkdel({$bien['madm'] })' ><img src='img/xoa.png' title='Xóa' class='delete'></p>" ?>
+                   </td>
+           
+           
+        <?php  
+				}
+			}
+			else
+				{
+					echo "<tr><td colspan='5'>Không có danh mục nào </td></tr>";
+				}
+			
+		?>
+    </table>
+</form>
+<body>
+</body>
+</html>
+<script language="JavaScript">
+    function checkdel(madm)
+    {
+        var	madm=madm;
+        var link="xoa_danhmuc.php?madm="+madm;
+        if(confirm("Bạn có chắc chắn muốn xóa danh mục này?")==true)
+            window.open(link,"_self",1);
+    }
+</script>

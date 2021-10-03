@@ -22,7 +22,9 @@
 							</ul>
 						</div><!-- End .dangnhap-in-->
 						<?php } ?>
-					</div><!-- End .center1-->						
+					</div><!-- End .center1-->
+				
+				
 				<div id="timkiem">
 					<div class="center1">
 						<h4>TÌM KIẾM </h4>
