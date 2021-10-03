@@ -245,21 +245,21 @@ ul li {
 }
 
 #sanphammoi tr td {
-    border: 1px solid green;
+    border: 1px solid black;
 }
 
 #sanphammoi tr.tieudespmoi {
-    color: white;
-    background: #2de135;
+    color: black;
+    background: gray;
     height: 30px;
     font-size: 18px;
 }
 
 #sanphammoi tr.sanphammoitheongay {
-    background: green;
+    background: black;
     height: 30px;
     text-align: center;
-    color: white;
+    color: yellow;
     font-size: 22px;
     font-weight: bold;
 }
