@@ -177,7 +177,7 @@ ul li {
 /* Show content_admin*/
 
 #center-content {
-    width: 1259px;
+    width: 1260px;
     height: auto;
     float: right;
     overflow: hidden;
@@ -200,7 +200,7 @@ ul li {
     height: 30px;
     cursor: pointer;
     background: white;
-    border: 1px solid green;
+    border: 1px solid black;
 }
 
 #check p input:nth-child(2) {
@@ -242,21 +242,21 @@ ul li {
 }
 
 #sanphammoi tr td {
-    border: 1px solid green;
+    border: 1px solid black;
 }
 
 #sanphammoi tr.tieudespmoi {
     color: white;
-    background: #2de135;
+    background: gray;
     height: 30px;
     font-size: 18px;
 }
 
 #sanphammoi tr.sanphammoitheongay {
-    background: green;
+    background: black;
     height: 30px;
     text-align: center;
-    color: white;
+    color: yellow;
     font-size: 22px;
     font-weight: bold;
 }
