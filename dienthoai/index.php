@@ -1,4 +1,4 @@
-<base href="http://localhost/dienthoai/" />
+<base href="http://localhost/MegaWeb/dienthoai/" />
 <?php 
 session_start();
 include("include/connect.php");?>
