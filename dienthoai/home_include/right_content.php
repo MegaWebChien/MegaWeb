@@ -52,7 +52,7 @@
 					<div class="center1">
 						<h4>HOTLINE</h4>
 						<h2><img src="img/goinong.png" width="160" height="80"></a></h2>
-							<p>0911495728</p>
+							<p>0912345678</p>
 						<h2><img src="img/anhemmega.jpg" width="180" height="170"></a></h2>
 							<h3>MeGa Chiến</h3>
 					</div><!-- End .center1-->
