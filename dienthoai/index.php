@@ -10,7 +10,7 @@ include("include/connect.php");?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mega Web </title>
 <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/mainpage.css">
+<link rel="stylesheet" href="css/mainpage1.css">
 
 
 
@@ -236,10 +236,9 @@ e.preventDefault();
 				</div><!-- End .lg-footer -->
 				<div id="noidung">
 					<ul>
-						<li><span id="tencongty">Công Ty MegaWeb</span></li> <br>
-						
-						<li>Địa chỉ: Trần Phú - Nha Trang </li>
-						<li>Điện thoại: 0911495728 - Hotline:  0258111111</li>
+						<li><span id="tencongty" style="font-size:200%;">Công Ty MegaWeb</span></li> <br>
+						<li>Địa chỉ: Đoàn Trần Nghiệp sát ZOZO </li>
+						<li>Điện thoại: 0911495728 - Hotline: 0912345678</li>
 						<li>Email:  dienthoaiabc1@gmail.com</li>
 					</ul>
 				</div><!-- End .noidung -->
@@ -247,7 +246,7 @@ e.preventDefault();
 					<img src="img/thanhngang-footer.png">
 				</div><!-- End .thanhngang -->
 				<div id="copyright">
-					<p>Nhóm MegaWeb | Lớp : 60CNTT2<p>
+				<p class="copyright-text">Copyright &copy;<a href="#">Nhóm MegaWeb </a>| Lớp : 60CNTT2.</p>
 				</div><!-- End .copyright -->
 				
 			</div><!-- End .noidungfooter -->
