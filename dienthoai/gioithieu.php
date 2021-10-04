@@ -21,8 +21,8 @@ hàng tại Hà Nội và Hồ Chí Minh và là 1 trong 5 hệ thống lớn l�
 Tiến Đạt mobile cám ơn tất cả các khách hàng đã mua và ủng hộ chúng tôi trong suốt thời gian qua bằng lời cám ơn chân thành nhất .
 	</p>
 	<img src="img/office.jpg" width="1000" height="600">
-	<p style="margin-bottom:10px; padding-left:60px;">Hình ảnh văn phòng Mega Web - Tầng 80 Landmark, Thành Phố Hồ Chí Minh </p>
-	<h4>Hà Nội</h4>
+	<p style="margin-bottom:10px; padding-left:60px;">Hình ảnh văn phòng Mega Web - Tầng 82 Langthang, Thành Phố Nha Trang </p>
+	<h4>Nha Trang</h4>
 
-<p >Địa chỉ : Quân 1 -  TP Hồ Chí Minh | Tel: 0911495728 </p>
+<p >Địa chỉ : Đoàn Trần Nghiệp sát quán zozo | Tel: 012345678 </p>
 </div>

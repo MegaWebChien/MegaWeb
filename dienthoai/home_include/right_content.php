@@ -48,13 +48,13 @@
 					</div><!-- End .center1-->
 				
 				
-				<div id="yahoo">
+				<div id="goinong">
 					<div class="center1">
 						<h4>HOTLINE</h4>
-						<h2><a href="ymsgr:sendim?anhchanglangtu_yeubetocvang&amp;m=g&amp;t=14"><img src="img/goinong.png" width="160" height="80"></a></h2>
-							<p>0978164307</p>
-						<h2><a href="ymsgr:sendim?boydangyeu8188&amp;m=g&amp;t=14"><img src="img/ntu.jpg" width="180" height="170"></a></h2>
-							<p>0982612514</p>
+						<h2><img src="img/goinong.png" width="160" height="80"></a></h2>
+							<p>0911495728</p>
+						<h2><img src="img/anhemmega.jpg" width="180" height="170"></a></h2>
+							<h3>MeGa Chiến</h3>
 					</div><!-- End .center1-->
 				</div><!-- End .yahoo -->
 </div><!-- dang nhập-->	
