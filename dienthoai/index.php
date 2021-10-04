@@ -182,7 +182,7 @@ e.preventDefault();
 
 	
 	<div id="content">
-		<div id="lofslidecontent45" class="lof-slidecontent" style="width:100%; height:350px;">
+		<div id="lofslidecontent45" class="lof-slidecontent" style="width:99%; height:350px;">
 			<div class="preload"><div></div></div>
 				<div id="lof-main-outer">
 					<ul class="lof-main-wapper">
