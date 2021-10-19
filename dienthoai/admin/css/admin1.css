@@ -60,12 +60,6 @@ ul li {
     border-bottom: 1px solid #151515;
 }
 
-#img {
-    border-radius: 20%;
-    -moz-border-radius: 20%;
-    -webkit-border-radius: 20%;
-}
-
 #content {
     width: 100%;
     height: auto;

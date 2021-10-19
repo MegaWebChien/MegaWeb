@@ -1,4 +1,4 @@
-<base href="http://localhost/MegaWeb/dienthoai/" />
+<base href="http://localhost/MegaWeb/dienthoai/Bai2" />
 <?php 
 session_start();
 include("include/connect.php");?>
@@ -136,7 +136,7 @@ e.preventDefault();
 <div id="wapper">
 	<div id="header">
 		<div id="lg-header">
-			<img id="img" src="img/MegaWeb.gif" alt="" width="144" height="115">
+			<a href="../dienthoai/index.php" ><img id="img" src="img/MegaWeb.gif" alt="" width="144" height="115"></a>
 		</div>
 		
 		<!-- End .bg-lg-header -->
@@ -156,12 +156,7 @@ e.preventDefault();
 							<?php } 
 							else {
 							?>
-							<p id="soluonggioh ang"style="color:red;">Có <span><?=$count?></span> sản phẩm trong giỏ</p>
-							 
-							
-							
-
-          
+							<p id="soluonggioh ang"style="color:red;">Có <span><?=$count?></span> sản phẩm trong giỏ</p>     
 					<?php } ?>		
 							
 					</div><!-- End .center3-->
