@@ -505,9 +505,9 @@ ul li {
 }
 
 #select2 input {
-    border: 1px solid #0a62c3;
-    background: #0a62c3;
-    color: #d1d0d0;
+    border: 1px solid black;
+    background: #e2d2d2;
+    color: black;
     width: 40%;
     margin-top: 10px;
     margin-bottom: 10px;

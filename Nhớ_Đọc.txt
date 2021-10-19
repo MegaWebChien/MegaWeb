@@ -1,5 +1,0 @@
-- đổi tên file  css:
- + main: mainpage.css
- + admin: admin.css
-- chỉnh phân trang bên admin
--chỉnh banner admin

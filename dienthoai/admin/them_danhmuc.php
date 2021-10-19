@@ -44,8 +44,8 @@ if(isset($_POST['btnthem']))
             	<select name="dequi">
                 	<option value="0">Danh mục chính</option>
                     <?php
-						$show = mysqli_query("SELECT * FROM danhmuc WHERE dequi=0");
-						while($show1 = mysql_fetch_array($show))
+						$show = mysqli_query($mysqli,"SELECT * FROM danhmuc WHERE dequi=0");
+						while($show1 = mysqli_fetch_array($show))
 						{
 							$madm = $show1['madm'];	
 							$tendm = $show1['tendm'];

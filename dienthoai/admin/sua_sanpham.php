@@ -43,7 +43,7 @@
 					<select name="danhmuc">
 					<?php 
 						$sql1="select * from danhmuc";
-						$rows1=mysqli_query($sql1);
+						$rows1=mysqli_query($mysqli,$sql1);
 						while($row1=mysqli_fetch_array($rows1))
 					{
 					?>
