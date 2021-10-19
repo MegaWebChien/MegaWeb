@@ -168,7 +168,7 @@ ul li {
 }
 
 #center-content {
-    width: 480px;
+    width: 57%;
     height: auto;
     float: left;
     margin-left: 40px;
@@ -320,11 +320,11 @@ ul li {
 }
 
 #right-content {
-    width: 340px;
+    width: 260px;
     height: auto;
-    float: right;
+    float: left;
     margin-top: -22px;
-    margin-right: 3px;
+    margin-left:0px;
 }
 
 #dangnhap {
