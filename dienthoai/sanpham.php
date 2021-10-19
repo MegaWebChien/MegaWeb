@@ -9,7 +9,7 @@
 	    while($row=mysqli_fetch_array($result))
 		{ 
 		?> 	<div class="sanpham"> <?php 
-			$sql1="select * from sanpham where madm={$row['madm']} order by idsp  LIMIT 0,6";
+			$sql1="select * from sanpham where madm={$row['madm']} order by idsp  LIMIT 0,100";
 			$kq=mysqli_query($mysqli,$sql1);
 			$dem = mysqli_num_rows($kq);
 			if($dem>0)
