@@ -52,15 +52,6 @@ ul li {
     padding-left: 40px;
 }
 
-#lg-header a {
-    background-image: url(../img/hoanggui5.png);
-    width: 104px;
-    height: 98px;
-    display: block;
-    text-indent: -99999px;
-    float: left;
-}
-
 #bg-header {
     background-image: url(../img/hoanggui5.png);
     width: auto;
