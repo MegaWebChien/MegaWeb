@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border-radius: 5px;
 }
 
 body {
@@ -16,7 +17,7 @@ ul li {
 }
 
 #wapper {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 5px;
     margin: auto;
@@ -28,7 +29,7 @@ ul li {
 }
 
 #header {
-    width: 100%;
+    width: 75%;
     height: 200px;
 }
 
@@ -391,7 +392,7 @@ ul li {
 }
 
 #dangnhap-in a button {
-    background: white;
+    background: #e2d2d2;
     margin-left: 50px;
     border: 1px solid #e1e1e1;
     color: black;
@@ -604,8 +605,10 @@ ul li {
 
 #copyright {
     font-size: 18px;
-    float:right;
+    float: right;
 }
+
+
 /*-----------------------PHAN TRANG show tu danh muc-------------------------------------*/
 
 .phantrang {
@@ -635,6 +638,8 @@ ul li {
 .phantrang a button.so {
     width: 20px;
 }
+
+
 /*-----------------------ĐĂNG KÝ- ĐĂNG NHẬP-------------------------------------*/
 
 .dangky {
@@ -697,6 +702,8 @@ ul li {
     border: 1px solid #f1f1f1;
     background: green;
 }
+
+
 /*-----------------------CHI TIẾT SẢN PHẨM-------------------------------------*/
 
 .chitietsp {
@@ -808,6 +815,8 @@ ul li {
     padding-top: 10px;
     padding-left: 10px;
 }
+
+
 /*-----------------------CART-------------------------------------*/
 
 .cart {
@@ -936,6 +945,8 @@ ul li {
 .tieptucmuahang a:hover {
     text-decoration: underline;
 }
+
+
 /*-----------------------THANH TOÁN - THÔNG TIN KHÁCH HÀNG-------------------------------------*/
 
 .thongtinkhachhang {
@@ -994,6 +1005,8 @@ ul li {
 .thongtinkhachhang table tr td.submit input:hover {
     color: green;
 }
+
+
 /*-----------------------SANPHAM.PHP-------------------------------------*/
 
 #xemthem {
@@ -1012,6 +1025,8 @@ ul li {
 #xemthem p a:hover {
     color: #8fc43a;
 }
+
+
 /*-----------------------GIỚI THIỆU-------------------------------------*/
 
 #gioithieu {
@@ -1041,6 +1056,8 @@ ul li {
 #gioithieu h4 {
     color: red;
 }
+
+
 /*-----------------------PHÂN TRANG-------------------------------------*/
 
 #phantrang_sp {
@@ -1078,6 +1095,8 @@ ul li {
 .active_hienthi_sp p {
     cursor: pointer;
 }
+
+
 /*-----------------------PHÂN TRANG-------------------------------------*/
 
 .khuyenmai {

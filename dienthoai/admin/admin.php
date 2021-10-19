@@ -12,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script language="javascript" src="ckeditor/ckeditor.js"></script>
 <title> Bán Điện Thoại </title>
-<link rel="stylesheet" type="text/css" href="css/admin.css">
+<link rel="stylesheet" type="text/css" href="css/admin1.css">
 
 
 
@@ -25,9 +25,11 @@
 <div id="wapper">
 	<div id="header">
 		<div id="lg-header">
+		<a href="../index.php" >
+		
 		<img style="border-radius:20%;
 		-moz-border-radius:20%;
-		-webkit-border-radius:20%;" src="img/MegaWeb.gif" alt="" width="144" height="118">
+		-webkit-border-radius:20%;" src="img/MegaWeb.gif" alt="" width="144" height="118"></a>
 		</div><!-- End .bg-lg-header -->
 		<div id="bg-header">
 		
