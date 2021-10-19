@@ -24,7 +24,7 @@
         	<td>Mã DM</td>
            <td> Tên DM</td>
             <td>Thuộc </td>
-            <td colspan=2>Active</td>
+            
         </tr>
                
 		<?php
@@ -61,9 +61,7 @@
                 <td class="masp_hienthi_sp"><?php  echo $bien['madm'] ?></td>
 				<td class="sl_hienthi_sp"><?php echo $bien['tendm'] ?></td>
 				<td class="sl_hienthi_sp"><?php echo $bien['dequi'] ?></td>
-                <td class="active_hienthi_sp">
-                    <a href='admin.php?admin=suasp&idsp=<?php echo $bien['madm']  ?>'><img src="img/sua.png" title="Sửa"></a>
-				</td>
+               
             </tr>
 <?php 
     }
