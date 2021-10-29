@@ -18,6 +18,7 @@
         <td>Số lượng</td>
         <td>Giá</td>
         <td>Thành tiền</td>
+        <td>Phương thức thanh toán</td>
     </tr>
 
     <?php
@@ -30,6 +31,7 @@
         {
 		$thanhtien=$bien['gia']*$bien['soluong'];
 		$tong+=$thanhtien;
+        $tmp=$bien['phuongthucthanhtoan'];
 ?>
 
             <tr class='noidung_hienthi_sp'>
@@ -38,6 +40,20 @@
 				<td class="sl_hienthi_sp"><?php echo $bien['soluong'] ?></td>
 				<td class="sl_hienthi_sp"><?php echo number_format($bien['gia'],0,",",".") ?></td>
 				<td class="sl_hienthi_sp"><?php echo number_format($thanhtien,0,",",".") ?></td>
+                <td class="sl_hienthi_pt"><?php 
+                    switch($tmp){
+                        case 1:
+                            echo "Qua bưu điện";
+                            break;
+                        case 2:
+                            echo "Qua thẻ ATM";
+                            break;
+                        case 3:
+                            echo "Thanh toán trực tiếp";
+                            break;
+                        default:"";
+                    }
+                ?></td>
                 
             </tr>
 <?php 
@@ -46,7 +62,7 @@
 		
 	?>
 		<tr>
-			<td colspan=5 align="right" style="padding:10px 20px 10px 0px; font-size:20px;">Tổng: <font color="red"><?php echo number_format($tong,0,",",".") ?></font></td>
+			<td colspan=6 align="right" style="padding:10px 20px 10px 0px; font-size:20px;">Tổng: <font color="red"><?php echo number_format($tong,0,",",".") ?></font></td>
 		</tr>
 	<?php 
 	}

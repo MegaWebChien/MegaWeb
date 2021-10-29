@@ -24,20 +24,12 @@
 						case "cart":
 							include ('cart/index.php');
 							break;
-<<<<<<< HEAD
-=======
-					
->>>>>>> main
 						case "sanpham":
 							include ('sanpham.php');
 							break;
 						case "phukien":
 							include ('phukien.php');
 							break;
-<<<<<<< HEAD
-=======
-						
->>>>>>> main
 						case "hethang":
 							include ('hethang.php');
 							break;
