@@ -24,21 +24,14 @@
 						case "cart":
 							include ('cart/index.php');
 							break;
-						case "hotro":
-							include ('hotro.php');
-							break;
+					
 						case "sanpham":
 							include ('sanpham.php');
 							break;
 						case "phukien":
 							include ('phukien.php');
 							break;
-						case "tintuc":
-							include ('tintuc.php');
-							break;
-						case "chitiettintuc":
-							include ('chitiettintuc.php');
-							break;
+						
 						case "hethang":
 							include ('hethang.php');
 							break;

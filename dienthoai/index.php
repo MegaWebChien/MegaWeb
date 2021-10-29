@@ -237,9 +237,9 @@ e.preventDefault();
 				<div id="noidung">
 					<ul>
 						<li><span id="tencongty" style="font-size:200%;">Công Ty MegaWeb</span></li> <br>
-						<li>Địa chỉ: Đoàn Trần Nghiệp sát ZOZO </li>
+						<li>Địa chỉ: Tầng 70 Landmark </li>
 						<li>Điện thoại: 0911495728 - Hotline: 0912345678</li>
-						<li>Email:  dienthoaiabc1@gmail.com</li>
+						<li>Email:  megawebchien@gmail.com</li>
 					</ul>
 				</div><!-- End .noidung -->
 				<div id="thanhngang">
