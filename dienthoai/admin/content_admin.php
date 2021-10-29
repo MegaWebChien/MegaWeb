@@ -35,18 +35,6 @@ if(isset($_GET['admin']))
 			case 'xulyhd':
 			include ("xulyhd.php");
 			break;
-		case 'hienthitt':
-			include ("tintuc.php");
-			break;
-		case 'themtt':
-			include ("them_tintuc.php");
-			break;
-		case 'suatt':
-			include ("sua_tintuc.php");
-			break;
-		case 'hienthiht':
-			include ("hotro.php");
-			break;
 		case 'hienthihd':
 			include ("hoadon.php");
 			break;
@@ -58,9 +46,6 @@ if(isset($_GET['admin']))
 			break;
 		case 'xulysp':
 			include ("xulysp.php");
-			break;
-		case 'xulytt':
-			include ("xulytt.php");
 			break;
 		default:
 			include ("sanpham.php");

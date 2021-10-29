@@ -23,7 +23,7 @@
             	<td>Điện thoại</td><td><input type="text" name="dienthoai"  value="<?php echo $row['dienthoai'] ?>"/></td>
             </tr>
 			<tr>
-            	<td>Quền</td><td>
+            	<td>Quyền</td><td>
 					<select name="phanquyen">
 								<option value="0" > 0 </option>
 								<option value="1" selected="selected"> 1 </option>
@@ -71,9 +71,9 @@
 			frm.pass.focus();
 			return false;
 		}
-		if(frm.pass.value.length<6)
+		if(frm.pass.value.length<8)
 		{
-			alert("Mật khẩu phải lớn hơn 6 ký tự");	
+			alert("Mật khẩu phải lớn hơn 8 ký tự");	
 			frm.pass.focus();
 			return false;
 		}
