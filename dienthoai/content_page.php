@@ -24,14 +24,20 @@
 						case "cart":
 							include ('cart/index.php');
 							break;
+<<<<<<< HEAD
+=======
 					
+>>>>>>> main
 						case "sanpham":
 							include ('sanpham.php');
 							break;
 						case "phukien":
 							include ('phukien.php');
 							break;
+<<<<<<< HEAD
+=======
 						
+>>>>>>> main
 						case "hethang":
 							include ('hethang.php');
 							break;
@@ -40,7 +46,7 @@
 							break;
 					}
 				}
-			elseif(isset($_GET['madm'])) {
+			else if(isset($_GET['madm'])) {
 					$sql = "SELECT * FROM sanpham  WHERE madm='{$_GET['madm']}'";	
 					if(isset($GET['madm']))
 					{
@@ -57,7 +63,7 @@
 						}  
 
 						// Chọn số kết quả trả về trong mỗi trang mặc định là 10 
-						$max_results = 12;  
+						$max_results = 5;  
 
 						// Tính số thứ tự giá trị trả về của đầu trang hiện tại 
 						$from = (($page * $max_results) - $max_results);  

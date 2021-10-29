@@ -26,10 +26,18 @@
 	<div id="header">
 		<div id="lg-header">
 		<a href="../index.php" >
+<<<<<<< Updated upstream
 		
 		<img style="border-radius:20%;
 		-moz-border-radius:20%;
 		-webkit-border-radius:20%;" src="img/MegaWeb.gif" alt="" width="144" height="118"></a>
+=======
+		<img style="border-radius:20%;
+		-moz-border-radius:20%;
+		-webkit-border-radius:20%;" 
+		src="img/MegaWeb.gif" alt="" width="144" height="118">
+	</a>
+>>>>>>> Stashed changes
 		</div><!-- End .bg-lg-header -->
 		<div id="bg-header">
 		
