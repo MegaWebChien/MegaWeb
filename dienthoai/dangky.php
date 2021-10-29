@@ -82,9 +82,9 @@
 			frm.pass.focus();
 			return false;
 		}
-		if(frm.pass.value.length<6)
+		if(frm.pass.value.length<8)
 		{
-			alert("Mật khẩu phải lớn hơn 6 ký tự");	
+			alert("Mật khẩu phải lớn hơn 8 ký tự");	
 			frm.pass.focus();
 			return false;
 		}

@@ -24,12 +24,20 @@
 						case "cart":
 							include ('cart/index.php');
 							break;
+<<<<<<< HEAD
+=======
+					
+>>>>>>> main
 						case "sanpham":
 							include ('sanpham.php');
 							break;
 						case "phukien":
 							include ('phukien.php');
 							break;
+<<<<<<< HEAD
+=======
+						
+>>>>>>> main
 						case "hethang":
 							include ('hethang.php');
 							break;
@@ -122,7 +130,9 @@
 						<div class="sanphamcon">
 							<?php 
 
+
 						    $sql1="select * from sanpham inner join danhmuc on sanpham.madm = danhmuc.madm where dequi=1 order by daban  DESC limit 15 ";
+
 
 							$result1= mysqli_query($mysqli,$sql1);
 						?>
@@ -163,7 +173,9 @@
 					<div class="sanphamcon">
 					    <?php 
 
+
 						    $sql1="select * from sanpham inner join danhmuc on sanpham.madm = danhmuc.madm where dequi=1 order by idsp  DESC limit 15 ";
+
 
 							$result1= mysqli_query($mysqli,$sql1);
 						?>
