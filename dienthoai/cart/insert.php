@@ -37,7 +37,7 @@ $sql="INSERT INTO hoadon(idnd,hoten,diachi,dienthoai,email,ngaydathang,trangthai
                $tensp=$row['tensp'];
         
                $gia=$row['gia']*((100-$row['khuyenmai1'])/100);
-               $sql1 ="insert into chitiethoadon(mahd,Tensp,Soluong,gia,phuongthucthanhtoan) values('$mahd','$tensp','$soluong','$gia','$phuongthuc')";
+               $sql1 ="insert into chitiethoadon(mahd,tensp,soluong,gia,phuongthucthanhtoan,idsp) values('$mahd','$tensp','$soluong','$gia','$phuongthuc','$stt')";
               mysqli_query($mysqli,$sql1);
               
             }
