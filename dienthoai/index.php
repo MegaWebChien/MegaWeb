@@ -177,15 +177,15 @@ e.preventDefault();
 
 	
 	<div id="content">
-		<div id="lofslidecontent45" class="lof-slidecontent" style="width:99%; height:350px;">
+		<div id="lofslidecontent45" class="lof-slidecontent" style="width:100%; height:350px;">
 			<div class="preload"><div></div></div>
 				<div id="lof-main-outer">
 					<ul class="lof-main-wapper">
-						<li><img src="img/slide/silde3.jpg" width="1000" height="350"></li>
-						<li><img src="img/slide/slide2.jpg" width="1000" height="350"></li>
-						<li><img src="img/slide/slide1.jpg" width="1000" height="350"></li>
-						<li><img src="img/slide/slide4.jpg" width="1000" height="350"></li>
-						<li><img src="img/slide/slide.jpg" width="1000" height="350"></li>
+						<li><img src="img/slide/silde3.jpg" width="700" height="350"></li>
+						<li><img src="img/slide/slide2.jpg" width="700" height="350"></li>
+						<li><img src="img/slide/slide1.jpg" width="700" height="350"></li>
+						<li><img src="img/slide/slide4.jpg" width="700" height="350"></li>
+						<li><img src="img/slide/slide.jpg" width="700" height="350"></li>
 					</ul>
 				</div>
 				<div class="lof-navigator-wapper">

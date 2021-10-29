@@ -1,6 +1,6 @@
 ﻿<link rel="stylesheet" href="css/them_sanpham.css">
 <?php
-		//include('../include/connect.php');
+		include('../include/connect.php');
 		$idsp=$_GET['idsp'];
         $sql="select * from sanpham where idsp=$idsp";
          $rows=mysqli_query($mysqli,$sql);
