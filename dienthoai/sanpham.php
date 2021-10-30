@@ -31,8 +31,8 @@
 									?>
 									<div class="moi"><h3>-<?php echo $rows['khuyenmai1']?>%</h3></div>
 									<?php } ?>
-									<a href="#"><img  src="img/uploads/<?php echo $rows['hinhanh'];?>"></a><br>					
-									<p><a href="#" ><?php echo $rows['tensp'];?></a></p><br>
+									<a href="index.php?content=chitietsp&idsp=<?php echo $rows['idsp'] ?>"><img  src="img/uploads/<?php echo $rows['hinhanh'];?>"></a><br>					
+									<p><a href="index.php?content=chitietsp&idsp=<?php echo $rows['idsp'] ?>" ><?php echo $rows['tensp'];?></a></p><br>
 									<h4><?php echo number_format(($rows['gia']*((100-$rows['khuyenmai1'])/100)),0,",",".");?></h4>
 									<div class="button">
 										<ul>

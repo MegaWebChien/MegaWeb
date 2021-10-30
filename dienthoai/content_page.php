@@ -55,7 +55,7 @@
 						}  
 
 						// Chọn số kết quả trả về trong mỗi trang mặc định là 10 
-						$max_results = 5;  
+						$max_results = 10;  
 
 						// Tính số thứ tự giá trị trả về của đầu trang hiện tại 
 						$from = (($page * $max_results) - $max_results);  
@@ -91,8 +91,8 @@
 									?>
 									<div class="moi"><h3>-<?php echo $result['khuyenmai1']?>%</h3></div>
 									<?php } ?>
-									<a href="#"><img  src="img/uploads/<?php echo $result['hinhanh'];?>"></a>				
-									<p><a href="#" ><?php echo $result['tensp'];?></a></p>
+									<a href="index.php?content=chitietsp&idsp=<?php echo $result['idsp'] ?>"><img  src="img/uploads/<?php echo $result['hinhanh'];?>"></a>				
+									<p><a href="index.php?content=chitietsp&idsp=<?php echo $result['idsp'] ?>" ><?php echo $result['tensp'];?></a></p>
 									<h4><?php echo number_format(($result['gia']*((100-$result['khuyenmai1'])/100)),0,",",".");?></h4>
 									<div class="button">
 										<ul>
@@ -139,8 +139,8 @@
 									?>
 									<div class="moi"><h3>-<?php echo $row['khuyenmai1']?>%</h3></div>
 									<?php } ?>
-							<h1><a href="#"><img  src="img/uploads/<?php echo $row['hinhanh'];?>"></a></h1>				
-							<p><a href="#" ><?php echo $row['tensp'];?></a></p>
+							<h1><a href="index.php?content=chitietsp&idsp=<?php echo $row['idsp'] ?>"><img  src="img/uploads/<?php echo $row['hinhanh'];?>"></a></h1>				
+							<p><a href="index.php?content=chitietsp&idsp=<?php echo $row['idsp'] ?>" ><?php echo $row['tensp'];?></a></p>
 							<h4>Giá: <?php echo number_format(($row['gia']*((100-$row['khuyenmai1'])/100)),0,",",".");?></h4>
 							<div class="button">
 										<ul>
@@ -182,8 +182,8 @@
 									?>
 									<div class="moi"><h3>-<?php echo $row['khuyenmai1']?>%</h3></div>
 									<?php } ?>
-							<h1><a href="#"><img  src="img/uploads/<?php echo $row['hinhanh'];?>"></a></h1>				
-							<p><a href="#" ><?php echo $row['tensp'];?></a></p>
+							<h1><a href="index.php?content=chitietsp&idsp=<?php echo $row['idsp'] ?>"><img  src="img/uploads/<?php echo $row['hinhanh'];?>"></a></h1>				
+							<p><a href="index.php?content=chitietsp&idsp=<?php echo $row['idsp'] ?>" ><?php echo $row['tensp'];?></a></p>
 							<h4><?php echo number_format(($row['gia']*((100-$row['khuyenmai1'])/100)),0,",",".");?></h4>
 							<div class="button">
 										<ul>
