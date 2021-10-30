@@ -1,15 +1,19 @@
-﻿					
-
-   
-		<?php 
+﻿
+<?php 
 	   $sql="select * from danhmuc where dequi=1 order by madm";
 	   $result=mysqli_query($mysqli,$sql);
 	
-	 
 	    while($row=mysqli_fetch_array($result))
 		{ 
 		?> 	<div class="sanpham"> <?php 
-			$sql1="select * from sanpham where madm={$row['madm']} order by idsp  LIMIT 0,100";
+		$rowsPerPage=5; //số mẩu tin trên mỗi trang, giả sử là 3
+		if (!isset($_GET['page'])){
+			$_GET['page'] = 1;
+		}
+		//vị trí của mẩu tin đầu tiên trên mỗi trang
+		$offset =($_GET['page']-1)*$rowsPerPage;
+		//lấy $rowsPerPage mẩu tin, bắt đầu từ vị trí $offset		
+			$sql1="SELECT * from sanpham where madm={$row['madm']} order by idsp  LIMIT $offset,$rowsPerPage";
 			$kq=mysqli_query($mysqli,$sql1);
 			$dem = mysqli_num_rows($kq);
 			if($dem>0)
@@ -44,7 +48,7 @@
 											</li>
 										</ul>
 									</div><!-- End .button-->
-			</div><!-- End .dienthoai-->
+				</div><!-- End .dienthoai-->
 			
 			<?php } ?>
 			

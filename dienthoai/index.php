@@ -212,8 +212,6 @@ e.preventDefault();
 				
 				<?php include("content_page.php"); ?>
 				<!-------------------------------------------------------------------------------------------------------------------->
-					
-				
 			</div><!-- End .center-content -->
 			
 			<div id="right-content">
