@@ -1,0 +1,7 @@
+Account admin:
+- User name: thaivannam
+- Password: thaivannam
+
+Account user:
+- User name: nguyena
+- Password: 12345678
