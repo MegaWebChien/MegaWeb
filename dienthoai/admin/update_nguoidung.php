@@ -21,10 +21,12 @@
 	$update=mysqli_query($mysqli,$sql_update);
 	if($update)
 	{
-		redirect("admin.php?admin=hienthind", "Bạn đã sửa thành công người dùng.", 2 );
+		redirect("logout.php", "Bạn đã sửa thành công người dùng.", 2 ); 
 	}
 	else {
 	redirect ("admin.php?admin=suand&idnd=$id", "Sửa thất bại", 2);
 	}
 	
+	
 ?>
+ 

@@ -27,7 +27,7 @@ if(isset($_POST['btnthem']))
 }
 ?>
 
-<form action="" method="post">
+<form action="" method="post" name="frm" onsubmit="return kiemtra()">
 	<table>
 		<tr class="tieude_themsp">
 				<td colspan=2>Thêm Danh Mục </td>
@@ -71,9 +71,25 @@ if(isset($_POST['btnthem']))
 		</tr>
        </table>    
 </form>
-
-
-
-
 </body>
 </html>
+
+<script language="javascript">
+ 	function  kiemtra()
+	{
+	    
+		if(frm.tendm.value=="")
+	 	{
+			alert("Bạn chưa nhập tên danh mục");
+			frm.tendm.focus();
+			return false;	
+		}
+		if(frm.dequi.value=="")
+		{
+			alert("Bạn chưa chọn thuộc");	
+			frm.dequi.focus();
+			return false;
+		}
+		
+	}
+ </script>

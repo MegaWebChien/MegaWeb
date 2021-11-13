@@ -5,6 +5,7 @@
          $rows=mysqli_query($mysqli,$sql);
          $row=mysqli_fetch_array($rows);
 ?>
+   
 <form action="update_nguoidung.php?idnd=<?php echo $idnd;?>" method="post" name="frm" onsubmit="return kiemtra()" enctype="multipart/form-data">
 	<table>
 			<tr class="tieude_themsp">
@@ -30,6 +31,7 @@
 					</select>
 				</td>
             </tr>
+			
             <tr>
                 <td colspan=2 class="input"> <input type="submit" name="update" value="Update" />
                 <input type="reset" name="" value="Hủy" /></td>
